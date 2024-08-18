@@ -21,6 +21,7 @@ def get_planetoid_dataset(name, normalize_features=False, transform=None, split=
         dataset.transform = T.NormalizeFeatures()
     elif transform is not None:
         dataset.transform = transform
+        
     return dataset
 
 
